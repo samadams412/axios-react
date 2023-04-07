@@ -1,18 +1,19 @@
 import React from "react";
 
 const SearchResult = (props) => {
+    console.log(props);
   return (
     <div className="text-center">
-      <h3>Title: {props.title}</h3>
       <img
         src={props.src}
         alt={props.title}
         className="img-fluid"
-        style={{ margin: "0 auto" }}
+        style={{ margin: "0 auto", borderRadius: '5px' }}
       />
-      <h3>Director(s): {props.director}</h3>
-      <h3>Genre: {props.genre}</h3>
-      <h3>Released: {props.released}</h3>
+      <p><strong>Director(s):</strong> {props.director}</p>
+      <p><strong>Genre:</strong> {props.genre}</p>
+      <p><strong>Released:</strong> {props.released}</p>
+      <p><strong>Run-time:</strong> {props.runtime}</p>
     </div>
   );
 };
