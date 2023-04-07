@@ -1,13 +1,11 @@
 
 
-import Table from './components/Table';
+import SearchContainer from './components/SearchContainer';
 
 function App() {
  
   return(
-    <div>
-      <Table></Table>
-    </div>
+     <SearchContainer/>
   )
     
   
